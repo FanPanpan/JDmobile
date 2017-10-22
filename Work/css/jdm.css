@@ -1,0 +1,585 @@
+html,body{
+	width: 100%;
+	/*height: 100%;*/
+	position: relative; 
+	/*overflow: hidden;*/
+}
+
+
+.jdm{
+	width: 100%; 
+	position: relative;
+	margin: 0 auto;
+}
+
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #c91523;
+	z-index: 999;
+}
+/*京东logo*/
+header .jdm-logo{
+	position: absolute;
+	width: 56px;
+	height: 21px;
+	top:10px;
+	left: 10px;
+	background-image: url(../image/jd-sprites.png);
+	background-size: 200px 200px;
+	background-position: 0 -109px;
+}
+/*搜索框*/
+header .search-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-left: 75px;
+	padding-right: 50px;
+}
+header .search-box input{
+	width: 100%;
+	height: 30px;
+	border:1px solid #ccc;
+	border-radius: 15px;
+	box-sizing: border-box;
+	margin-top:5px;
+	font-size: 14px;
+	padding-left: 30px;
+}
+header .search-box .icon-search{
+	position: absolute;
+	top:6px; 
+	left:80px;
+	width: 20px;
+	height: 30px;
+	background:url(../image/jd-sprites.png);
+	background-size: 200px 200px;
+	background-position: -59px 95px;
+}
+/*登录*/
+header .jdm-login{
+	position: absolute;
+	top: 0;
+	right:10px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+}
+/*主要区域内容*/
+main{
+	width: 100%;
+}
+
+/*轮播图*/
+main .carousel{
+	width: 100%;
+}
+main .carousel img{
+	width: 100%;
+}
+/*导航*/
+.nav{
+	width: 100%;
+	padding-top: 10px;
+	background-color: #fff;
+}
+.nav ul{
+	width: 100%;
+	overflow: hidden;
+}
+.nav ul a{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.nav ul li{
+	float: left;
+	width: 25%;
+	margin-bottom: 10px;
+}
+.nav ul img{
+	width: 40px;
+	height: 40px;
+}
+.nav ul span{
+	display: block;
+	margin-top: 5px;
+}
+/*秒杀*/
+.seckill{
+	margin-top: 5px;
+	background-color: #fff;
+}
+/*秒杀标题*/
+.seckill .title{
+	padding: 10px 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+} 
+.seckill .title h4{
+	position: relative;
+	float: left;
+	padding: 0 10px;
+	font-size: 15px;
+	color: #CA1327;
+	font-weight: normal;
+}
+.seckill .title h4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    width: 20px;
+    height: 26px;
+    background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -84px -107px;
+}    
+.seckill .title span{
+	float: left;
+	font-size: 15px;
+	color: #fff;
+	background-color: #000;
+}
+.seckill .title span:nth-child(3n){
+	color: #000;
+	background-color: #fff;
+}
+.seckill .title .more{
+	position: relative;
+	float: right;
+	color: #666;
+	font-size: 12px;
+	line-height: 15px;
+}
+.seckill .title .more::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -10px;
+    width: 7px;
+    height: 12px;
+    background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -186px -51px;
+}  
+
+/*秒杀商品*/
+.seckill .goods{
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 20px;
+	box-sizing: border-box;
+}
+.goods ul{
+	width: 100%;
+	overflow: hidden;
+}
+.goods li{
+	float: left;
+	width: 33.3333%;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.goods li a{
+	position: relative;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.goods li img{
+	display: block;
+	vertical-align: middle;
+	width: 100%;
+}
+.goods li b{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	padding: 5px;
+	font-size: 10px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #fdb60a;
+}
+.goods .price{
+	line-height: 14px;
+	text-align: center;
+}
+.goods .price span{
+	display: block;
+	color:#ed5657;
+	margin-top: 8px;
+}
+.goods .price del{
+	color: #888;
+	font-size: 10px;
+	margin-top: 4px;
+	text-decoration: line-through;
+}
+/*会场*/
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	display: block;
+	width: 100%;
+}
+.banner ul{
+	position: absolute;
+	left: 0;
+	bottom: 8px;
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+.banner li {
+	float: left;
+	width: 50%;
+}
+.banner li a{
+	display: block;
+	text-decoration: none;
+}
+/*热卖*/
+.major{
+	
+}
+.major ul{
+	width: 100%;
+}
+
+.major ul li{
+	overflow: hidden;
+}
+.major ul a{
+	display: block;
+}
+.major ul img{
+	width: 100%;
+	display: block;
+}
+.major .three a{
+	float: left;
+	width: 33.3333%;
+}
+.major .two a{
+	float: left;
+	width: 50%;
+}
+/*广告*/
+.advert{
+	padding: 8px;
+}
+.advert img{
+	display: block;
+	width: 100%;
+}
+/*超市*/
+.market{
+	background-color: #fff;
+}
+.market h4{
+	color: #CA1327;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 34px;
+	padding:0 8px;
+}
+.market ul{
+	width: 100%;
+	overflow: hidden;
+}
+.market ul li{
+	width: 50%;
+	float: left;
+}
+.market ul a{
+	display: block;
+	width: 100%;
+}
+.market ul img{
+	width: 100%;
+	display: block;
+}
+/*主题街*/
+.theme h4{
+	color: #CA1327;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 34px;
+	padding:0 8px;
+}
+.theme ul{
+	width: 100%;
+	overflow: hidden;
+}
+.theme ul li{
+	width: 100%;
+	overflow: hidden;
+}
+.theme .half{
+	width: 50%;
+	float: left;
+}
+.theme .half a{
+	width: 100%;
+}
+.theme .half .two{
+	width: 50%;
+}
+.theme ul a{
+	float: left;
+	display: block;
+	width: 25%;
+}
+.theme ul img{
+	display: block;
+	width: 100%;
+}
+/*品牌推荐*/
+.brand{
+	background-color: #fff;
+}
+.brand h4{
+	color: #CA1327;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 34px;
+	padding:0 8px;
+}
+.brand ul{
+	width: 100%;
+	overflow: hidden;
+}
+.brand ul li{
+	float: left;
+	width: 30%;
+}
+.brand li:first-child{
+	width: 40%;
+}
+.brand ul a{
+	display: block;
+	width: 100%;
+}
+.brand ul img{
+	width: 100%;
+	display: block;
+}
+/*猜你喜欢*/
+.guess .title{
+	padding: 10px 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+} 
+.guess .title h4{
+	position: relative;
+	float: left;
+	font-size: 15px;
+	color:#000;
+	font-weight: normal;
+}
+.guess .title .login{
+	position: relative;
+	float: right;
+	color: #CA1327;
+	font-size: 12px;
+	line-height: 15px;
+}
+.guess .title .login::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: 74px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../image/icon-login.png);
+    background-size: 18px;
+} 
+/*.guess .title .login::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -10px;
+    width: 7px;
+    height: 12px;
+    background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -186px -51px;
+} */
+/*猜你喜欢items*/
+.guess .items{
+	width: 100%;
+	overflow: hidden;
+}
+.guess .items .item{
+	float: left;
+	width: 50%;
+	padding:0 8px;
+	margin: 10px 0 16px 0;
+	box-sizing: border-box;
+}
+.guess .item>a{
+	display: block;
+	width: 100%;
+}
+.guess .item img{
+	width: 100%;
+	vertical-align: middle;
+}
+.guess .item p{
+	width: 100%;
+	height: 40px;
+	margin-top: 8px;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	overflow: hidden;
+	font-size: 13px;
+	line-height: 20px;
+}
+.items .price{
+    padding-top: 8px;
+    margin-top: 6px;
+    border-top: 1px solid #999;
+    font-size: 13px;
+    color: #f15353;
+	overflow: hidden;
+}
+.items .price .see-like{
+	float: right;
+	font-size: 12px;
+	color:#999;
+	border: 1px solid #999;
+}
+/*获取更多数据*/
+.getmore {
+	width: 100%;
+	line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #f3f5f7;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+	
+}
+/*底部*/
+.footer{
+	padding-bottom:44px;
+
+}
+/*其他*/
+.footer .extra{
+	padding: 18px 0;
+	text-align: center;
+	font-size: 0;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.footer .extra a{
+	width: 75px;
+	line-height: 1;
+	color: #848689;
+	font-size: 13px;
+    border-right: 1px solid #848689;
+    display: inline-block;
+}
+.footer .extra a:last-child{
+	border:0;
+}
+
+/*设备*/
+.footer .device{
+	padding: 10px 0;
+	overflow: hidden;
+	border-bottom: 1px solid #DEDEDE;
+}
+.footer .device li{
+	float: left;
+	width: 33.333%;
+	text-align: center;
+}
+.footer .device a{
+	display: block;
+    width: 45px;
+    margin: auto;
+    color: #848689;
+    font-size: 12px;
+}
+.footer .device .app-icon::before{
+	content: '';
+	display: block;
+	height: 40px;
+	background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -114px -65px;
+}
+.footer .device .mobile-icon::before{
+	content: '';
+	display: block;
+	height: 40px;
+	background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -33px -65px;
+}
+.footer .device .pc-icon::before{
+	content: '';
+	display: block;
+	height: 40px;
+	background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -75px -65px;
+}
+/*版权*/
+.footer .copyright{
+	line-height: 44px;
+	font-size: 12px;
+	text-align: center;
+	color: #848689;
+}
+
+
+
+
+
+/*工具栏*/
+.toolbar {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 44px;
+	margin-top: 44px;
+	background-color: #fff;
+}
+.toolbar ul{
+	width: 100%;
+	height: 100%;
+}
+.toolbar li{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.toolbar ul a{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+
+}
+.toolbar ul img{
+	height: 44px;
+	width: auto;
+}

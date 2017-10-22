@@ -1,0 +1,157 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+.jd-sort{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+}
+/*头部搜索*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	background-image: url(../image/header-bg.png);
+	background-size: 1px 44px;
+	background-repeat:repeat-x;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+} 
+/*返回按钮*/
+header .back-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 44px;
+	padding: 10px 11px;
+	background: url("../image/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: -22px 2px;
+	background-origin: content-box;
+	background-clip: content-box;
+	box-sizing: border-box;
+}
+header .search-box{
+	width: 100%;
+	height: 45px;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+header .search-box input{
+	width: 100%;
+	height: 30px;
+	border:1px solid #ccc;
+	margin-top: 6px;
+	border-radius: 5px;
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+header .menu-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 44px;
+	padding: 10px 11px;
+	background: url("../image/jd-sprites.png");
+	background-size: 200px 200px;
+	background-position: -60px 2px;
+	background-origin: content-box;
+	background-clip: content-box;
+	box-sizing: border-box;
+}
+
+/*侧边栏*/
+main{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: 45px;
+	box-sizing: border-box;
+	display: flex;
+
+}
+main aside {
+	width: 90px;
+	height: 100%;
+	overflow: hidden;
+}
+main aside ul{
+	width: 100%;
+}
+main aside li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+	text-align: center;	
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	box-sizing: border-box;
+	background-color: #f7f7f7;
+}
+main aside .active{
+	background-color: #fff;
+  	color:#c91523;
+  	border-right: none;
+}
+/*右侧内容*/
+
+/*热门推荐*/
+main article{
+	flex: 1;
+	height: 100%;
+	width: 100%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+main article .hot-tuijain h2{
+	font-size: 13px;
+	color:#666;
+}
+main article .hot-tuijain ul{
+	margin-top: 15px;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	overflow: hidden;
+}
+.hot-tuijain ul li{
+	float: left;
+	width: 33.333%;
+	height: 50px;
+	line-height: 50px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 13px;
+}
+/*热门导购*/
+.hot-sale{
+	margin: 15px 0;
+}
+.hot-sale ul{
+	width: 100%;
+}
+.hot-sale ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+.hot-sale ul a{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.hot-sale ul span {
+	display: block;
+	margin: 8px 0;
+}
